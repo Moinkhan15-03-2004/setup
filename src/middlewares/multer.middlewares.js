@@ -8,6 +8,10 @@ const storage = multer.diskStorage({
   }
 })
 
-export const upload = multer({ storage: storage })
+// yaha multer instance banake export karna hota hai
+const upload = multer({ storage: storage });
+
+export { upload };
+
 
 
